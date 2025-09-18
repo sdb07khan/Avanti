@@ -1,6 +1,25 @@
 gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", () => {
+  let lastScroll = 0;
+  const header = document.querySelector(".header");
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll && currentScroll > 100) {
+      // scrolling down
+      header.classList.add("hide");
+    } else {
+      // scrolling up
+      header.classList.remove("hide");
+    }
+
+    lastScroll = currentScroll;
+  });
+
+  /////////////////////////////////////////////////////////////////////////
+
   const cards = document.querySelectorAll(".memberCard");
   const bios = document.querySelectorAll(".bioContent");
 

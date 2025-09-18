@@ -394,7 +394,8 @@ a {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 10000; }
+  z-index: 10000;
+  transition: transform 0.3s ease; }
   .header .mainContainer {
     display: flex;
     justify-content: space-between;
@@ -419,7 +420,7 @@ a {
         line-height: normal;
         letter-spacing: normal;
         text-align: left;
-        color: #fff;
+        color: #000;
         transition: all 0.3s ease; }
         .header .mainContainer .nav a:hover {
           color: #f1b347; }
@@ -437,6 +438,9 @@ a {
       transition: all 0.3s ease; }
       .header .mainContainer .donateBox a:hover {
         opacity: 0.8; }
+
+.header.hide {
+  transform: translateY(-100%); }
 
 .footer {
   -webkit-backdrop-filter: blur(80px);
