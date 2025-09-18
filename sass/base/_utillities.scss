@@ -1,0 +1,139 @@
+.sectionWrapper {
+  margin: 0 auto;
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
+  max-width: calc(1600px + 16vw);
+}
+
+@media (max-width: 575px) {
+  .sectionWrapper {
+    margin: 0 auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    max-width: calc(1400px + 10vw);
+  }
+}
+
+.font80 {
+  font-size: clamp(2.8rem, 5vw, 8rem);
+}
+
+.font64 {
+  font-size: clamp(2.8rem, 4.2vw, 6.4rem);
+}
+
+.font52 {
+  font-size: clamp(2.8rem, 3.5vw, 5.2rem);
+}
+
+.font36 {
+  font-size: 3.6rem;
+
+  @media only screen and (max-width: 1400px) {
+    font-size: 3.2rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 2.8rem;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 2.2rem;
+  }
+}
+
+.font32 {
+  font-size: 3.2rem;
+
+  @media only screen and (max-width: 1400px) {
+    font-size: 2.8rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 2.4rem;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 2rem;
+  }
+}
+
+.font28 {
+  font-size: 2.8rem;
+
+  @media only screen and (max-width: 1400px) {
+    font-size: 2.4rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 2.2rem;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 1.8rem;
+  }
+}
+
+.font24 {
+  font-size: 2.4rem;
+
+  @media only screen and (max-width: 1400px) {
+    font-size: 2.2rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 1.6rem;
+  }
+}
+
+.font20 {
+  font-size: 2rem;
+
+  @media only screen and (max-width: 1400px) {
+    font-size: 1.8rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.6rem;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 1.4rem;
+  }
+}
+
+.font18 {
+  font-size: 1.8rem;
+
+  @media only screen and (max-width: 1400px) {
+    font-size: 1.6rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 1.4rem;
+  }
+}
+
+.font16 {
+  font-size: 1.6rem;
+
+  @media only screen and (max-width: 1400px) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.4rem;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,71 @@
+.header {
+  background-color: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(8px);
+  //   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+
+  .mainContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+
+    .logoBox {
+      a {
+        display: block;
+        img {
+          height: 6rem;
+          width: auto;
+          display: block;
+        }
+      }
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 5vw;
+
+      a {
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: #f1b347;
+        }
+      }
+    }
+
+    .donateBox {
+      a {
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+        padding: 0.6rem 2.4rem;
+        border-radius: 18px;
+        background-color: #f1b347;
+        transition: all 0.3s ease;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}

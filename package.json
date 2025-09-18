@@ -3,18 +3,16 @@
   "version": "1.0.0",
   "description": "html-sass-starter",
   "main": "index.js",
-"scripts": {
-  "devserver": "npx live-server",
-  "watch:sass": "node-sass sass/main.scss assets/css/style.css -w",
-  "start": "npm-run-all --parallel devserver watch:sass",
-
-  "compile:sass": "node-sass sass/main.scss assets/css/style.comp.css",
-  "concat:css": "concat -o assets/css/style.concat.css assets/css/font-icon.css assets/css/style.comp.css",
-  "prefix:css": "postcss assets/css/style.concat.css --use autoprefixer -b 'last 10 versions' -o assets/css/style.prefix.css",
-  "compress:css": "postcss assets/css/style.prefix.css --use cssnano -o assets/css/style.css",
-
-  "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
-},
+  "scripts": {
+    "devserver": "npx live-server",
+    "watch:sass": "node-sass sass/main.scss assets/css/style.css -w",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass sass/main.scss assets/css/style.comp.css",
+    "concat:css": "concat -o assets/css/style.concat.css assets/css/font-icon.css assets/css/style.comp.css",
+    "prefix:css": "postcss assets/css/style.concat.css --use autoprefixer -b 'last 10 versions' -o assets/css/style.prefix.css",
+    "compress:css": "postcss assets/css/style.prefix.css --use cssnano -o assets/css/style.css",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+  },
   "author": "Aldrin B",
   "license": "ISC",
   "devDependencies": {

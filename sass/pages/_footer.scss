@@ -1,0 +1,185 @@
+.footer {
+  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(80px);
+  background-image: radial-gradient(
+    circle at 15% 21%,
+    #482e41,
+    rgba(72, 46, 65, 0.22) 83%,
+    rgba(72, 46, 65, 0) 108%
+  );
+  position: relative;
+
+  .footerBG {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .footerLogo {
+    position: absolute;
+    bottom: 2rem;
+    right: 7.5vw;
+    height: 11rem;
+    width: auto;
+  }
+
+  .mainContainer {
+    padding: 4rem 0 8rem 0;
+
+    .desktop {
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        h2 {
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #fff;
+          font-family: var(--spMono);
+        }
+
+        p {
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #fff;
+          max-width: 33.5%;
+        }
+      }
+
+      .bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 10vw;
+        padding-top: 6rem;
+
+        .left {
+          flex: 1;
+
+          .contactForm {
+            // max-width: 400px;
+
+            .formGroup {
+              position: relative;
+              margin-bottom: 1.6rem;
+
+              .formInput {
+                width: 100%;
+                padding: 1rem 0;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid #fff;
+                color: #fff;
+                font-size: 1.6rem;
+                outline: none;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.66;
+                letter-spacing: normal;
+                text-align: left;
+                color: #fff;
+
+                &::placeholder {
+                  color: #fff;
+                  opacity: 0.8;
+                }
+              }
+
+              &.messageGroup {
+                display: flex;
+                align-items: center;
+
+                .submitBtn {
+                  background: none;
+                  border: none;
+                  color: #fff;
+                  font-size: 22px;
+                  cursor: pointer;
+                  margin-left: -30px;
+                }
+              }
+            }
+          }
+
+          .socialContainer {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            padding-top: 2rem;
+
+            a {
+              svg {
+                height: 3.8rem;
+                width: auto;
+
+                path {
+                }
+              }
+            }
+          }
+        }
+
+        .middle {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+
+          a {
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #fff;
+          }
+        }
+
+        .right {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+
+          a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #fff;
+
+            span {
+              svg {
+                height: 100%;
+                width: 100%;
+                display: block;
+
+                path {
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

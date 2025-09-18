@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Spline+Sans:wght@300..700&display=swap");
+
+:root {
+  --gs-font: "GeneralSans", sans-serif;
+  --sp: "Spline Sans", sans-serif;
+  --spMono: "Spline Sans Mono", monospace;
+}
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url(/assets/fonts/GeneralSans-Extralight.otf) format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url(/assets/fonts/GeneralSans-Light.otf) format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url(/assets/fonts/GeneralSans-Regular.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url(/assets/fonts/GeneralSans-Medium.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url(/assets/fonts/GeneralSans-Semibold.otf) format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GeneralSans";
+  src: url(/assets/fonts/GeneralSans-Bold.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}

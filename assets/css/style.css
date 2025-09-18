@@ -1,3 +1,46 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Spline+Sans:wght@300..700&display=swap");
+:root {
+  --gs-font: "GeneralSans", sans-serif;
+  --sp: "Spline Sans", sans-serif;
+  --spMono: "Spline Sans Mono", monospace; }
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url(/assets/fonts/GeneralSans-Extralight.otf) format("opentype");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url(/assets/fonts/GeneralSans-Light.otf) format("opentype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url(/assets/fonts/GeneralSans-Regular.otf) format("opentype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url(/assets/fonts/GeneralSans-Medium.otf) format("opentype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url(/assets/fonts/GeneralSans-Semibold.otf) format("opentype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: "GeneralSans";
+  src: url(/assets/fonts/GeneralSans-Bold.otf) format("opentype");
+  font-weight: 700;
+  font-style: normal; }
+
 *,
 *::after,
 *::before {
@@ -7,14 +50,13 @@
 
 html {
   font-size: 62.5%;
-  font-family: serif;
-  font-weight: 500;
+  font-family: var(--gs-font);
   font-optical-sizing: auto;
   font-style: normal; }
   @media only screen and (max-width: 991px) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 769px) {
+  @media only screen and (max-width: 768px) {
     html {
       font-size: 62.5%; } }
   @media only screen and (max-width: 320px) {
@@ -23,6 +65,899 @@ html {
 
 body {
   background-color: #fff;
-  color: #d8ab62;
+  color: #000;
   overflow-x: hidden;
   position: relative; }
+
+a {
+  text-decoration: none; }
+
+.sectionWrapper {
+  margin: 0 auto;
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
+  max-width: calc(1600px + 16vw); }
+
+@media (max-width: 575px) {
+  .sectionWrapper {
+    margin: 0 auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    max-width: calc(1400px + 10vw); } }
+
+.font80 {
+  font-size: clamp(2.8rem, 5vw, 8rem); }
+
+.font64 {
+  font-size: clamp(2.8rem, 4.2vw, 6.4rem); }
+
+.font52 {
+  font-size: clamp(2.8rem, 3.5vw, 5.2rem); }
+
+.font36 {
+  font-size: 3.6rem; }
+  @media only screen and (max-width: 1400px) {
+    .font36 {
+      font-size: 3.2rem; } }
+  @media only screen and (max-width: 768px) {
+    .font36 {
+      font-size: 2.8rem; } }
+  @media only screen and (max-width: 575px) {
+    .font36 {
+      font-size: 2.2rem; } }
+
+.font32 {
+  font-size: 3.2rem; }
+  @media only screen and (max-width: 1400px) {
+    .font32 {
+      font-size: 2.8rem; } }
+  @media only screen and (max-width: 768px) {
+    .font32 {
+      font-size: 2.4rem; } }
+  @media only screen and (max-width: 575px) {
+    .font32 {
+      font-size: 2rem; } }
+
+.font28 {
+  font-size: 2.8rem; }
+  @media only screen and (max-width: 1400px) {
+    .font28 {
+      font-size: 2.4rem; } }
+  @media only screen and (max-width: 768px) {
+    .font28 {
+      font-size: 2.2rem; } }
+  @media only screen and (max-width: 575px) {
+    .font28 {
+      font-size: 1.8rem; } }
+
+.font24 {
+  font-size: 2.4rem; }
+  @media only screen and (max-width: 1400px) {
+    .font24 {
+      font-size: 2.2rem; } }
+  @media only screen and (max-width: 768px) {
+    .font24 {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 575px) {
+    .font24 {
+      font-size: 1.6rem; } }
+
+.font20 {
+  font-size: 2rem; }
+  @media only screen and (max-width: 1400px) {
+    .font20 {
+      font-size: 1.8rem; } }
+  @media only screen and (max-width: 768px) {
+    .font20 {
+      font-size: 1.6rem; } }
+  @media only screen and (max-width: 575px) {
+    .font20 {
+      font-size: 1.4rem; } }
+
+.font18 {
+  font-size: 1.8rem; }
+  @media only screen and (max-width: 1400px) {
+    .font18 {
+      font-size: 1.6rem; } }
+  @media only screen and (max-width: 768px) {
+    .font18 {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 575px) {
+    .font18 {
+      font-size: 1.4rem; } }
+
+.font16 {
+  font-size: 1.6rem; }
+  @media only screen and (max-width: 1400px) {
+    .font16 {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 768px) {
+    .font16 {
+      font-size: 1.4rem; } }
+  @media only screen and (max-width: 575px) {
+    .font16 {
+      font-size: 1.2rem; } }
+
+.donateBanner {
+  position: relative; }
+  .donateBanner .mainContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .donateBanner .mainContainer .contentBox {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 35%; }
+      .donateBanner .mainContainer .contentBox h1 {
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.05;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000;
+        margin-bottom: 1rem; }
+      .donateBanner .mainContainer .contentBox p {
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000; }
+    .donateBanner .mainContainer img {
+      position: absolute; }
+    .donateBanner .mainContainer .img1 {
+      height: 16rem;
+      width: auto;
+      top: 35%;
+      right: 30%; }
+    .donateBanner .mainContainer .img2 {
+      height: 25rem;
+      width: auto;
+      top: 20%;
+      right: 4%; }
+    .donateBanner .mainContainer .img3 {
+      height: 34rem;
+      width: auto;
+      bottom: 2rem;
+      right: 0; }
+
+.donateDesc {
+  position: relative; }
+  .donateDesc .mainContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    .donateDesc .mainContainer .contentBox {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      max-width: 100%; }
+      .donateDesc .mainContainer .contentBox p {
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #000;
+        max-width: 50%; }
+    .donateDesc .mainContainer img {
+      position: absolute; }
+    .donateDesc .mainContainer .img1 {
+      height: 16rem;
+      width: auto;
+      bottom: 4rem;
+      left: 45%; }
+    .donateDesc .mainContainer .img2 {
+      height: 25rem;
+      width: auto;
+      top: 20%;
+      left: 4%; }
+    .donateDesc .mainContainer .img3 {
+      height: 34rem;
+      width: auto;
+      bottom: 2rem;
+      left: 0; }
+
+.donatePlatform .mainContainer {
+  padding: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .donatePlatform .mainContainer .msg {
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    padding-bottom: 6rem;
+    width: 60%; }
+  .donatePlatform .mainContainer .donateVia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; }
+    .donatePlatform .mainContainer .donateVia p {
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #482e41;
+      width: 65%; }
+    .donatePlatform .mainContainer .donateVia a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 2rem;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: center;
+      color: #000;
+      border: 1px solid #000;
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      transition: all 0.3s ease;
+      width: fit-content; }
+      .donatePlatform .mainContainer .donateVia a span svg {
+        transition: all 0.3s ease; }
+      .donatePlatform .mainContainer .donateVia a:hover {
+        background: #f1b347;
+        border: 1px solid #f1b347; }
+
+.donateFinancials .mainContainer {
+  padding: 8rem 0 12rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .donateFinancials .mainContainer h2 {
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    margin-bottom: 0.5rem; }
+  .donateFinancials .mainContainer h5 {
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    margin-bottom: 0.4rem; }
+  .donateFinancials .mainContainer p {
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    width: 33%; }
+  .donateFinancials .mainContainer .reports {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 4rem 0; }
+    .donateFinancials .mainContainer .reports h5 {
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #f1b347;
+      border-bottom: 1px solid #f1b347;
+      width: fit-content; }
+    .donateFinancials .mainContainer .reports .reportsWrapper {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 2rem; }
+      .donateFinancials .mainContainer .reports .reportsWrapper a {
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.52;
+        letter-spacing: 5.76px;
+        text-align: center;
+        color: #482e41;
+        border-bottom: 1px solid #482e41;
+        padding: 0 2rem; }
+
+.header {
+  background-color: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(8px);
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000; }
+  .header .mainContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem; }
+    .header .mainContainer .logoBox a {
+      display: block; }
+      .header .mainContainer .logoBox a img {
+        height: 6rem;
+        width: auto;
+        display: block; }
+    .header .mainContainer .nav {
+      display: flex;
+      align-items: center;
+      gap: 5vw; }
+      .header .mainContainer .nav a {
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
+        transition: all 0.3s ease; }
+        .header .mainContainer .nav a:hover {
+          color: #f1b347; }
+    .header .mainContainer .donateBox a {
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #fff;
+      padding: 0.6rem 2.4rem;
+      border-radius: 18px;
+      background-color: #f1b347;
+      transition: all 0.3s ease; }
+      .header .mainContainer .donateBox a:hover {
+        opacity: 0.8; }
+
+.footer {
+  -webkit-backdrop-filter: blur(80px);
+  backdrop-filter: blur(80px);
+  background-image: radial-gradient(circle at 15% 21%, #482e41, rgba(72, 46, 65, 0.22) 83%, rgba(72, 46, 65, 0) 108%);
+  position: relative; }
+  .footer .footerBG {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1; }
+  .footer .footerLogo {
+    position: absolute;
+    bottom: 2rem;
+    right: 7.5vw;
+    height: 11rem;
+    width: auto; }
+  .footer .mainContainer {
+    padding: 4rem 0 8rem 0; }
+    .footer .mainContainer .desktop .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%; }
+      .footer .mainContainer .desktop .top h2 {
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
+        font-family: var(--spMono); }
+      .footer .mainContainer .desktop .top p {
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
+        max-width: 33.5%; }
+    .footer .mainContainer .desktop .bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 10vw;
+      padding-top: 6rem; }
+      .footer .mainContainer .desktop .bottom .left {
+        flex: 1; }
+        .footer .mainContainer .desktop .bottom .left .contactForm .formGroup {
+          position: relative;
+          margin-bottom: 1.6rem; }
+          .footer .mainContainer .desktop .bottom .left .contactForm .formGroup .formInput {
+            width: 100%;
+            padding: 1rem 0;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            font-size: 1.6rem;
+            outline: none;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.66;
+            letter-spacing: normal;
+            text-align: left;
+            color: #fff; }
+            .footer .mainContainer .desktop .bottom .left .contactForm .formGroup .formInput::placeholder {
+              color: #fff;
+              opacity: 0.8; }
+          .footer .mainContainer .desktop .bottom .left .contactForm .formGroup.messageGroup {
+            display: flex;
+            align-items: center; }
+            .footer .mainContainer .desktop .bottom .left .contactForm .formGroup.messageGroup .submitBtn {
+              background: none;
+              border: none;
+              color: #fff;
+              font-size: 22px;
+              cursor: pointer;
+              margin-left: -30px; }
+        .footer .mainContainer .desktop .bottom .left .socialContainer {
+          display: flex;
+          gap: 2rem;
+          align-items: center;
+          padding-top: 2rem; }
+          .footer .mainContainer .desktop .bottom .left .socialContainer a svg {
+            height: 3.8rem;
+            width: auto; }
+      .footer .mainContainer .desktop .bottom .middle {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem; }
+        .footer .mainContainer .desktop .bottom .middle a {
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #fff; }
+      .footer .mainContainer .desktop .bottom .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem; }
+        .footer .mainContainer .desktop .bottom .right a {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #fff; }
+          .footer .mainContainer .desktop .bottom .right a span svg {
+            height: 100%;
+            width: 100%;
+            display: block; }
+
+.homeBanner .mainContainer {
+  position: relative; }
+  .homeBanner .mainContainer .imgBox {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    .homeBanner .mainContainer .imgBox img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      max-height: 100vh; }
+      @media only screen and (max-width: 768px) {
+        .homeBanner .mainContainer .imgBox img {
+          min-height: 70vh; } }
+      @media only screen and (max-width: 575px) {
+        .homeBanner .mainContainer .imgBox img {
+          min-height: 60vh; } }
+  .homeBanner .mainContainer .imgBox::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    /* adjust how tall the fade is */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    pointer-events: none;
+    /* ensures it doesn’t block clicks */ }
+  .homeBanner .mainContainer .contentBox {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    align-items: flex-end; }
+    @media only screen and (max-width: 575px) {
+      .homeBanner .mainContainer .contentBox {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem; } }
+    .homeBanner .mainContainer .contentBox h1 {
+      font-family: var(--sp);
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.08;
+      letter-spacing: 3px;
+      text-align: left;
+      color: #fff;
+      max-width: 50%; }
+      @media only screen and (max-width: 768px) {
+        .homeBanner .mainContainer .contentBox h1 {
+          max-width: 65%; } }
+      @media only screen and (max-width: 575px) {
+        .homeBanner .mainContainer .contentBox h1 {
+          max-width: 100%;
+          text-align: center; } }
+    .homeBanner .mainContainer .contentBox .donateBtn a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 2rem;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      text-align: center;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      transition: all 0.3s ease; }
+      @media only screen and (max-width: 768px) {
+        .homeBanner .mainContainer .contentBox .donateBtn a {
+          padding: 1rem;
+          font-size: 1.4rem; } }
+      @media only screen and (max-width: 575px) {
+        .homeBanner .mainContainer .contentBox .donateBtn a {
+          flex-direction: column-reverse; } }
+      .homeBanner .mainContainer .contentBox .donateBtn a span svg {
+        transition: all 0.3s ease;
+        width: 3.6rem;
+        height: auto; }
+        @media only screen and (max-width: 768px) {
+          .homeBanner .mainContainer .contentBox .donateBtn a span svg {
+            width: 3rem; } }
+        @media only screen and (max-width: 575px) {
+          .homeBanner .mainContainer .contentBox .donateBtn a span svg {
+            width: 2.4rem; } }
+      .homeBanner .mainContainer .contentBox .donateBtn a:hover {
+        background: #f1b347;
+        border: 1px solid #f1b347; }
+
+.homeMission .mainContainer {
+  padding: 6rem 0; }
+  .homeMission .mainContainer .head {
+    display: flex;
+    align-items: center; }
+    @media only screen and (max-width: 1200px) {
+      .homeMission .mainContainer .head {
+        margin-bottom: 1.6rem; } }
+    @media only screen and (max-width: 768px) {
+      .homeMission .mainContainer .head {
+        margin-bottom: 3.2rem; } }
+    .homeMission .mainContainer .head h5 {
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000; }
+    .homeMission .mainContainer .head .line {
+      flex: 1;
+      height: 1px;
+      background: #000;
+      margin-left: 5%; }
+      @media only screen and (max-width: 768px) {
+        .homeMission .mainContainer .head .line {
+          display: none; } }
+  .homeMission .mainContainer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem; }
+    @media only screen and (max-width: 768px) {
+      .homeMission .mainContainer .content {
+        flex-direction: column;
+        gap: 3.2rem; } }
+    .homeMission .mainContainer .content .left {
+      max-width: 50%; }
+      @media only screen and (max-width: 768px) {
+        .homeMission .mainContainer .content .left {
+          max-width: 100%; } }
+      .homeMission .mainContainer .content .left p {
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000; }
+    .homeMission .mainContainer .content .right {
+      max-width: 50%; }
+      @media only screen and (max-width: 768px) {
+        .homeMission .mainContainer .content .right {
+          max-width: 100%; } }
+      .homeMission .mainContainer .content .right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+
+.homeTeam .mainContainer {
+  padding: 8rem 0; }
+  .homeTeam .mainContainer .head {
+    text-align: center;
+    margin-bottom: 4rem; }
+    .homeTeam .mainContainer .head h2 {
+      font-family: var(--sp);
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000; }
+    .homeTeam .mainContainer .head p {
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000; }
+  .homeTeam .mainContainer .memberContainer {
+    display: flex;
+    gap: 4rem; }
+    .homeTeam .mainContainer .memberContainer .left {
+      flex: 2; }
+      .homeTeam .mainContainer .memberContainer .left .teamGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); }
+        @media only screen and (max-width: 900px) {
+          .homeTeam .mainContainer .memberContainer .left .teamGrid {
+            grid-template-columns: repeat(2, 1fr); } }
+        @media only screen and (max-width: 768px) {
+          .homeTeam .mainContainer .memberContainer .left .teamGrid {
+            gap: 2rem;
+            grid-template-columns: repeat(1, 1fr); } }
+        .homeTeam .mainContainer .memberContainer .left .teamGrid .memberCard {
+          text-align: center;
+          cursor: pointer;
+          position: relative; }
+          .homeTeam .mainContainer .memberContainer .left .teamGrid .memberCard img {
+            width: 100%; }
+          .homeTeam .mainContainer .memberContainer .left .teamGrid .memberCard .nameDesg {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem; }
+            @media only screen and (max-width: 768px) {
+              .homeTeam .mainContainer .memberContainer .left .teamGrid .memberCard .nameDesg {
+                position: relative;
+                bottom: unset;
+                left: unset; } }
+            .homeTeam .mainContainer .memberContainer .left .teamGrid .memberCard .nameDesg h4 {
+              font-weight: 500;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1;
+              letter-spacing: normal;
+              text-align: left;
+              color: #fff; }
+              @media only screen and (max-width: 768px) {
+                .homeTeam .mainContainer .memberContainer .left .teamGrid .memberCard .nameDesg h4 {
+                  color: #000;
+                  line-height: 1.5; } }
+            .homeTeam .mainContainer .memberContainer .left .teamGrid .memberCard .nameDesg p {
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: left;
+              color: #fff; }
+              @media only screen and (max-width: 768px) {
+                .homeTeam .mainContainer .memberContainer .left .teamGrid .memberCard .nameDesg p {
+                  color: #000; } }
+          .homeTeam .mainContainer .memberContainer .left .teamGrid .memberCard .mobileBio {
+            display: block;
+            max-height: 0;
+            margin-top: 10px;
+            text-align: left;
+            overflow: hidden;
+            transition: max-height 0.5s ease; }
+          .homeTeam .mainContainer .memberContainer .left .teamGrid .memberCard.open .mobileBio {
+            display: block;
+            max-height: 100rem; }
+    .homeTeam .mainContainer .memberContainer .right {
+      flex: 1;
+      position: relative; }
+      .homeTeam .mainContainer .memberContainer .right .teamDesc {
+        margin-bottom: 8rem; }
+        .homeTeam .mainContainer .memberContainer .right .teamDesc .line {
+          height: 1px;
+          width: 50%;
+          background-color: #000;
+          margin-bottom: 2rem; }
+        .homeTeam .mainContainer .memberContainer .right .teamDesc p {
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #000; }
+      .homeTeam .mainContainer .memberContainer .right .bioPanel .bioContent {
+        display: none; }
+        .homeTeam .mainContainer .memberContainer .right .bioPanel .bioContent h4 {
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1;
+          letter-spacing: normal;
+          text-align: left;
+          color: #000;
+          margin-bottom: 0.4rem; }
+        .homeTeam .mainContainer .memberContainer .right .bioPanel .bioContent h6 {
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #f1b347;
+          margin-bottom: 1.2rem; }
+        .homeTeam .mainContainer .memberContainer .right .bioPanel .bioContent p {
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: left;
+          color: #000; }
+        .homeTeam .mainContainer .memberContainer .right .bioPanel .bioContent.active {
+          display: block; }
+
+@media (max-width: 768px) {
+  .homeTeam .memberContainer {
+    flex-direction: column; }
+    .homeTeam .memberContainer .right {
+      display: none; }
+    .homeTeam .memberContainer .left .teamGrid .memberCard .mobileBio {
+      display: none; } }
+
+.homePartner .mainContainer .headContainer {
+  margin-bottom: 4rem; }
+  .homePartner .mainContainer .headContainer .heading {
+    font-family: var(--sp);
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000; }
+  .homePartner .mainContainer .headContainer .parabox {
+    display: flex;
+    gap: 3.2rem;
+    justify-content: space-between;
+    padding: 1rem 0; }
+    .homePartner .mainContainer .headContainer .parabox .line {
+      height: 1px;
+      width: 100%;
+      background-color: #000;
+      flex: 1;
+      margin-top: 1.5rem; }
+    .homePartner .mainContainer .headContainer .parabox p {
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #000;
+      flex: 1; }
+
+.homePartner .mainContainer .sliderContainer {
+  padding-left: calc(7.5vw - 2rem); }
+  @media only screen and (max-width: 575px) {
+    .homePartner .mainContainer .sliderContainer {
+      padding-left: 5vw; } }
+  .homePartner .mainContainer .sliderContainer .btnWrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 7.5vw; }
+    .homePartner .mainContainer .sliderContainer .btnWrapper svg {
+      height: 3.2rem;
+      width: auto;
+      display: block;
+      cursor: pointer; }
+  .homePartner .mainContainer .sliderContainer .sliderWrapper {
+    padding: 4rem 0 12rem 0; }
+    .homePartner .mainContainer .sliderContainer .sliderWrapper .slide {
+      padding: 0 2rem; }
+      .homePartner .mainContainer .sliderContainer .sliderWrapper .slide .imgBox {
+        background-color: #f7f7f7;
+        aspect-ratio: 16/9;
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.6rem;
+        width: 100%; }
+        .homePartner .mainContainer .sliderContainer .sliderWrapper .slide .imgBox img {
+          height: 12rem;
+          width: auto;
+          display: block; }
+      .homePartner .mainContainer .sliderContainer .sliderWrapper .slide .contentBox h6 {
+        font-family: var(--sp);
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #482e41;
+        margin-bottom: 4px; }
+      .homePartner .mainContainer .sliderContainer .sliderWrapper .slide .contentBox p {
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000;
+        margin-bottom: 2rem; }
+      .homePartner .mainContainer .sliderContainer .sliderWrapper .slide .contentBox .btnBox {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #a6a6a6; }
+        .homePartner .mainContainer .sliderContainer .sliderWrapper .slide .contentBox .btnBox a {
+          padding: 0.5rem 1.2rem;
+          border-radius: 11.2px;
+          background-color: #f1b347;
+          font-size: 1.1rem;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #fff; }
