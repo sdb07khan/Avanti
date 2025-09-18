@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 575,
         settings: {
           slidesToShow: 1.2,
           slidesToScroll: 1,

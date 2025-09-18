@@ -438,6 +438,13 @@
     .headContainer {
       margin-bottom: 4rem;
 
+      @media only screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
       .heading {
         font-family: var(--sp);
         font-weight: 600;
@@ -455,12 +462,27 @@
         justify-content: space-between;
         padding: 1rem 0;
 
+        @media only screen and (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+          padding: 0;
+        }
+
         .line {
           height: 1px;
           width: 100%;
           background-color: #000;
           flex: 1;
           margin-top: 1.5rem;
+
+          @media only screen and (max-width: 768px) {
+            flex: none;
+            width: 25%;
+          }
+          @media only screen and (max-width: 575px) {
+            flex: none;
+            width: 30%;
+          }
         }
 
         p {
@@ -472,6 +494,10 @@
           text-align: left;
           color: #000;
           flex: 1;
+
+          @media only screen and (max-width: 768px) {
+            text-align: center;
+          }
         }
       }
     }
@@ -514,7 +540,7 @@
           .imgBox {
             background-color: #f7f7f7;
             aspect-ratio: 16/9;
-            height: 30rem;
+            // height: 30rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -525,6 +551,17 @@
               height: 12rem;
               width: auto;
               display: block;
+
+              @media only screen and (max-width: 1400px) {
+                height: 9rem;
+              }
+
+              @media only screen and (max-width: 768px) {
+                height: 6rem;
+              }
+              @media only screen and (max-width: 575px) {
+                height: 5rem;
+              }
             }
           }
 
@@ -539,6 +576,7 @@
               text-align: left;
               color: #482e41;
               margin-bottom: 4px;
+              font-size: 1.6rem;
             }
 
             p {
