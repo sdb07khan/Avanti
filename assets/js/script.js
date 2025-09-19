@@ -5,17 +5,41 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".header");
 
   window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
+    if (window.innerWidth > 768) {
+      // only for desktop
+      const currentScroll = window.pageYOffset;
 
-    if (currentScroll > lastScroll && currentScroll > 100) {
-      // scrolling down
-      header.classList.add("hide");
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        // scrolling down
+        header.classList.add("hide");
+      } else {
+        // scrolling up
+        header.classList.remove("hide");
+      }
+
+      lastScroll = currentScroll;
     } else {
-      // scrolling up
+      // reset header state on mobile/tablet
       header.classList.remove("hide");
     }
+  });
 
-    lastScroll = currentScroll;
+  /////////////////////////////////////////////////////////////////////////////////////
+  // side nav open close function HIGHLIGHT
+  const hamburger = document.querySelector(".hamburger");
+  const closeBtn = document.querySelector(".closeBtn");
+  const nav = document.querySelector(".mainNav");
+
+  hamburger.addEventListener("click", () => {
+    nav.style.transform = "translateX(0)";
+    hamburger.style.display = "none";
+    closeBtn.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    nav.style.transform = "translateX(100%)";
+    hamburger.style.display = "block";
+    closeBtn.style.display = "none";
   });
 
   /////////////////////////////////////////////////////////////////////////

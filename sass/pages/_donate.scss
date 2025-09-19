@@ -7,6 +7,12 @@
     width: 100%;
     height: 100%;
 
+    @media only screen and (max-width: 768px) {
+      align-items: flex-end;
+      justify-content: center;
+      text-align: center;
+    }
+
     .contentBox {
       min-height: 100vh;
       display: flex;
@@ -15,15 +21,30 @@
       justify-content: center;
       max-width: 35%;
 
+      @media only screen and (max-width: 768px) {
+        max-width: 85%;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      @media only screen and (max-width: 575px) {
+        min-height: 75vh;
+        max-width: 100%;
+      }
+
       h1 {
         font-weight: 600;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.05;
         letter-spacing: normal;
-        text-align: left;
         color: #000;
         margin-bottom: 1rem;
+        text-transform: uppercase;
+
+        @media only screen and (max-width: 768px) {
+          text-align: center;
+        }
       }
 
       p {
@@ -33,6 +54,76 @@
         line-height: normal;
         letter-spacing: normal;
         color: #000;
+      }
+
+      .donateBtn {
+        display: none;
+
+        @media only screen and (max-width: 768px) {
+          display: block;
+          margin: 2rem 0 10vh 0;
+        }
+
+        @media only screen and (max-width: 575px) {
+          margin: 0;
+          margin-top: 2rem;
+        }
+
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+          padding: 2rem;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1;
+          letter-spacing: normal;
+          text-align: center;
+          color: #000;
+          border: 1px solid #000;
+          border-radius: 50%;
+          aspect-ratio: 1/1;
+          transition: all 0.3s ease;
+
+          @media only screen and (max-width: 768px) {
+            padding: 1rem;
+            font-size: 1.4rem;
+          }
+
+          @media only screen and (max-width: 575px) {
+            flex-direction: column-reverse;
+          }
+
+          span {
+            svg {
+              transition: all 0.3s ease;
+              width: 3.6rem;
+              height: auto;
+
+              @media only screen and (max-width: 768px) {
+                width: 3rem;
+              }
+              @media only screen and (max-width: 575px) {
+                width: 2.4rem;
+              }
+
+              path {
+              }
+            }
+          }
+
+          &:hover {
+            background: #f1b347;
+            border: 1px solid #f1b347;
+          }
+        }
+
+        // &:hover svg {
+        //   transform: translateX(4px);
+        // }
       }
     }
 
@@ -45,6 +136,20 @@
       width: auto;
       top: 35%;
       right: 30%;
+
+      @media only screen and (max-width: 1450px) {
+        top: 30%;
+      }
+
+      @media only screen and (max-width: 768px) {
+        right: 65%;
+        width: 30%;
+        height: auto;
+        top: 25%;
+      }
+      @media only screen and (max-width: 575px) {
+        top: 16%;
+      }
     }
 
     .img2 {
@@ -52,6 +157,16 @@
       width: auto;
       top: 20%;
       right: 4%;
+
+      @media only screen and (max-width: 1450px) {
+        height: 18rem;
+        right: 2%;
+      }
+      @media only screen and (max-width: 768px) {
+        top: 0%;
+        width: 42%;
+        height: auto;
+      }
     }
 
     .img3 {
@@ -59,6 +174,17 @@
       width: auto;
       bottom: 2rem;
       right: 0;
+
+      @media only screen and (max-width: 768px) {
+        bottom: 43%;
+        width: 55%;
+        height: auto;
+      }
+      @media only screen and (max-width: 575px) {
+        bottom: 50%;
+        width: 55%;
+        height: auto;
+      }
     }
   }
 }
@@ -66,11 +192,32 @@
 .donateDesc {
   position: relative;
 
+  @media only screen and (max-width: 768px) {
+    padding: 8rem 0 0 0;
+  }
+
   .mainContainer {
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    .imgMob {
+      display: none;
+
+      @media only screen and (max-width: 768px) {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        // margin-bottom: 3.2rem;
+      }
+    }
 
     .contentBox {
       min-height: 100vh;
@@ -80,6 +227,10 @@
       justify-content: center;
       max-width: 100%;
 
+      @media only screen and (max-width: 768px) {
+        min-height: 100%;
+      }
+
       p {
         font-weight: 500;
         font-stretch: normal;
@@ -88,11 +239,20 @@
         letter-spacing: normal;
         color: #000;
         max-width: 50%;
+
+        @media only screen and (max-width: 768px) {
+          max-width: 100%;
+          text-align: center;
+        }
       }
     }
 
     img {
       position: absolute;
+
+      @media only screen and (max-width: 768px) {
+        position: unset;
+      }
     }
 
     .img1 {
@@ -100,6 +260,12 @@
       width: auto;
       bottom: 4rem;
       left: 45%;
+
+      @media only screen and (max-width: 768px) {
+        transform: translateX(-75%);
+        width: 40%;
+        height: auto;
+      }
     }
 
     .img2 {
@@ -107,6 +273,12 @@
       width: auto;
       top: 20%;
       left: 4%;
+
+      @media only screen and (max-width: 768px) {
+        transform: translate(45%, -8rem);
+        width: 60%;
+        height: auto;
+      }
     }
 
     .img3 {
@@ -114,6 +286,13 @@
       width: auto;
       bottom: 2rem;
       left: 0;
+
+      @media only screen and (max-width: 1200px) {
+        height: 26rem;
+      }
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 }
@@ -135,6 +314,14 @@
       color: #000;
       padding-bottom: 6rem;
       width: 60%;
+
+      @media only screen and (max-width: 768px) {
+        width: 80%;
+        padding-bottom: 4rem;
+      }
+      @media only screen and (max-width: 575px) {
+        width: 90%;
+      }
     }
 
     .donateVia {
@@ -173,11 +360,29 @@
         border-radius: 50%;
         aspect-ratio: 1/1;
         transition: all 0.3s ease;
-        width: fit-content;
+
+        @media only screen and (max-width: 768px) {
+          padding: 1rem;
+          font-size: 1.4rem;
+        }
+
+        @media only screen and (max-width: 575px) {
+          flex-direction: column-reverse;
+        }
 
         span {
           svg {
             transition: all 0.3s ease;
+            width: 3.6rem;
+            height: auto;
+
+            @media only screen and (max-width: 768px) {
+              width: 3rem;
+            }
+            @media only screen and (max-width: 575px) {
+              width: 2.4rem;
+            }
+
             path {
             }
           }
@@ -188,10 +393,6 @@
           border: 1px solid #f1b347;
         }
       }
-
-      //   &:hover svg {
-      //     transform: translateX(4px);
-      //   }
     }
   }
 }
@@ -202,6 +403,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media only screen and (max-width: 768px) {
+      padding: 6rem 0 8rem 0;
+    }
 
     h2 {
       font-weight: 600;
@@ -235,6 +440,13 @@
       text-align: center;
       color: #000;
       width: 33%;
+
+      @media only screen and (max-width: 768px) {
+        width: 65%;
+      }
+      @media only screen and (max-width: 575px) {
+        width: 90%;
+      }
     }
 
     .reports {

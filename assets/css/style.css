@@ -185,6 +185,11 @@ a {
     align-items: center;
     width: 100%;
     height: 100%; }
+    @media only screen and (max-width: 768px) {
+      .donateBanner .mainContainer {
+        align-items: flex-end;
+        justify-content: center;
+        text-align: center; } }
     .donateBanner .mainContainer .contentBox {
       min-height: 100vh;
       display: flex;
@@ -192,15 +197,27 @@ a {
       align-items: flex-start;
       justify-content: center;
       max-width: 35%; }
+      @media only screen and (max-width: 768px) {
+        .donateBanner .mainContainer .contentBox {
+          max-width: 85%;
+          align-items: center;
+          justify-content: flex-end; } }
+      @media only screen and (max-width: 575px) {
+        .donateBanner .mainContainer .contentBox {
+          min-height: 75vh;
+          max-width: 100%; } }
       .donateBanner .mainContainer .contentBox h1 {
         font-weight: 600;
         font-stretch: normal;
         font-style: normal;
         line-height: 1.05;
         letter-spacing: normal;
-        text-align: left;
         color: #000;
-        margin-bottom: 1rem; }
+        margin-bottom: 1rem;
+        text-transform: uppercase; }
+        @media only screen and (max-width: 768px) {
+          .donateBanner .mainContainer .contentBox h1 {
+            text-align: center; } }
       .donateBanner .mainContainer .contentBox p {
         font-weight: 500;
         font-stretch: normal;
@@ -208,6 +225,54 @@ a {
         line-height: normal;
         letter-spacing: normal;
         color: #000; }
+      .donateBanner .mainContainer .contentBox .donateBtn {
+        display: none; }
+        @media only screen and (max-width: 768px) {
+          .donateBanner .mainContainer .contentBox .donateBtn {
+            display: block;
+            margin: 2rem 0 10vh 0; } }
+        @media only screen and (max-width: 575px) {
+          .donateBanner .mainContainer .contentBox .donateBtn {
+            margin: 0;
+            margin-top: 2rem; } }
+        .donateBanner .mainContainer .contentBox .donateBtn a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+          padding: 2rem;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1;
+          letter-spacing: normal;
+          text-align: center;
+          color: #000;
+          border: 1px solid #000;
+          border-radius: 50%;
+          aspect-ratio: 1/1;
+          transition: all 0.3s ease; }
+          @media only screen and (max-width: 768px) {
+            .donateBanner .mainContainer .contentBox .donateBtn a {
+              padding: 1rem;
+              font-size: 1.4rem; } }
+          @media only screen and (max-width: 575px) {
+            .donateBanner .mainContainer .contentBox .donateBtn a {
+              flex-direction: column-reverse; } }
+          .donateBanner .mainContainer .contentBox .donateBtn a span svg {
+            transition: all 0.3s ease;
+            width: 3.6rem;
+            height: auto; }
+            @media only screen and (max-width: 768px) {
+              .donateBanner .mainContainer .contentBox .donateBtn a span svg {
+                width: 3rem; } }
+            @media only screen and (max-width: 575px) {
+              .donateBanner .mainContainer .contentBox .donateBtn a span svg {
+                width: 2.4rem; } }
+          .donateBanner .mainContainer .contentBox .donateBtn a:hover {
+            background: #f1b347;
+            border: 1px solid #f1b347; }
     .donateBanner .mainContainer img {
       position: absolute; }
     .donateBanner .mainContainer .img1 {
@@ -215,24 +280,70 @@ a {
       width: auto;
       top: 35%;
       right: 30%; }
+      @media only screen and (max-width: 1450px) {
+        .donateBanner .mainContainer .img1 {
+          top: 30%; } }
+      @media only screen and (max-width: 768px) {
+        .donateBanner .mainContainer .img1 {
+          right: 65%;
+          width: 30%;
+          height: auto;
+          top: 25%; } }
+      @media only screen and (max-width: 575px) {
+        .donateBanner .mainContainer .img1 {
+          top: 16%; } }
     .donateBanner .mainContainer .img2 {
       height: 25rem;
       width: auto;
       top: 20%;
       right: 4%; }
+      @media only screen and (max-width: 1450px) {
+        .donateBanner .mainContainer .img2 {
+          height: 18rem;
+          right: 2%; } }
+      @media only screen and (max-width: 768px) {
+        .donateBanner .mainContainer .img2 {
+          top: 0%;
+          width: 42%;
+          height: auto; } }
     .donateBanner .mainContainer .img3 {
       height: 34rem;
       width: auto;
       bottom: 2rem;
       right: 0; }
+      @media only screen and (max-width: 768px) {
+        .donateBanner .mainContainer .img3 {
+          bottom: 43%;
+          width: 55%;
+          height: auto; } }
+      @media only screen and (max-width: 575px) {
+        .donateBanner .mainContainer .img3 {
+          bottom: 50%;
+          width: 55%;
+          height: auto; } }
 
 .donateDesc {
   position: relative; }
+  @media only screen and (max-width: 768px) {
+    .donateDesc {
+      padding: 8rem 0 0 0; } }
   .donateDesc .mainContainer {
     display: flex;
     align-items: center;
     width: 100%;
     height: 100%; }
+    @media only screen and (max-width: 768px) {
+      .donateDesc .mainContainer {
+        flex-direction: column;
+        gap: 4rem; } }
+    .donateDesc .mainContainer .imgMob {
+      display: none; }
+      @media only screen and (max-width: 768px) {
+        .donateDesc .mainContainer .imgMob {
+          display: block;
+          width: 100%;
+          height: auto;
+          object-fit: cover; } }
     .donateDesc .mainContainer .contentBox {
       min-height: 100vh;
       display: flex;
@@ -240,6 +351,9 @@ a {
       align-items: flex-end;
       justify-content: center;
       max-width: 100%; }
+      @media only screen and (max-width: 768px) {
+        .donateDesc .mainContainer .contentBox {
+          min-height: 100%; } }
       .donateDesc .mainContainer .contentBox p {
         font-weight: 500;
         font-stretch: normal;
@@ -248,23 +362,46 @@ a {
         letter-spacing: normal;
         color: #000;
         max-width: 50%; }
+        @media only screen and (max-width: 768px) {
+          .donateDesc .mainContainer .contentBox p {
+            max-width: 100%;
+            text-align: center; } }
     .donateDesc .mainContainer img {
       position: absolute; }
+      @media only screen and (max-width: 768px) {
+        .donateDesc .mainContainer img {
+          position: unset; } }
     .donateDesc .mainContainer .img1 {
       height: 16rem;
       width: auto;
       bottom: 4rem;
       left: 45%; }
+      @media only screen and (max-width: 768px) {
+        .donateDesc .mainContainer .img1 {
+          transform: translateX(-75%);
+          width: 40%;
+          height: auto; } }
     .donateDesc .mainContainer .img2 {
       height: 25rem;
       width: auto;
       top: 20%;
       left: 4%; }
+      @media only screen and (max-width: 768px) {
+        .donateDesc .mainContainer .img2 {
+          transform: translate(45%, -8rem);
+          width: 60%;
+          height: auto; } }
     .donateDesc .mainContainer .img3 {
       height: 34rem;
       width: auto;
       bottom: 2rem;
       left: 0; }
+      @media only screen and (max-width: 1200px) {
+        .donateDesc .mainContainer .img3 {
+          height: 26rem; } }
+      @media only screen and (max-width: 768px) {
+        .donateDesc .mainContainer .img3 {
+          display: none; } }
 
 .donatePlatform .mainContainer {
   padding: 8rem 0;
@@ -281,6 +418,13 @@ a {
     color: #000;
     padding-bottom: 6rem;
     width: 60%; }
+    @media only screen and (max-width: 768px) {
+      .donatePlatform .mainContainer .msg {
+        width: 80%;
+        padding-bottom: 4rem; } }
+    @media only screen and (max-width: 575px) {
+      .donatePlatform .mainContainer .msg {
+        width: 90%; } }
   .donatePlatform .mainContainer .donateVia {
     display: flex;
     flex-direction: column;
@@ -313,10 +457,24 @@ a {
       border: 1px solid #000;
       border-radius: 50%;
       aspect-ratio: 1/1;
-      transition: all 0.3s ease;
-      width: fit-content; }
+      transition: all 0.3s ease; }
+      @media only screen and (max-width: 768px) {
+        .donatePlatform .mainContainer .donateVia a {
+          padding: 1rem;
+          font-size: 1.4rem; } }
+      @media only screen and (max-width: 575px) {
+        .donatePlatform .mainContainer .donateVia a {
+          flex-direction: column-reverse; } }
       .donatePlatform .mainContainer .donateVia a span svg {
-        transition: all 0.3s ease; }
+        transition: all 0.3s ease;
+        width: 3.6rem;
+        height: auto; }
+        @media only screen and (max-width: 768px) {
+          .donatePlatform .mainContainer .donateVia a span svg {
+            width: 3rem; } }
+        @media only screen and (max-width: 575px) {
+          .donatePlatform .mainContainer .donateVia a span svg {
+            width: 2.4rem; } }
       .donatePlatform .mainContainer .donateVia a:hover {
         background: #f1b347;
         border: 1px solid #f1b347; }
@@ -326,6 +484,9 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (max-width: 768px) {
+    .donateFinancials .mainContainer {
+      padding: 6rem 0 8rem 0; } }
   .donateFinancials .mainContainer h2 {
     font-weight: 600;
     font-stretch: normal;
@@ -354,6 +515,12 @@ a {
     text-align: center;
     color: #000;
     width: 33%; }
+    @media only screen and (max-width: 768px) {
+      .donateFinancials .mainContainer p {
+        width: 65%; } }
+    @media only screen and (max-width: 575px) {
+      .donateFinancials .mainContainer p {
+        width: 90%; } }
   .donateFinancials .mainContainer .reports {
     display: flex;
     flex-direction: column;
@@ -396,24 +563,77 @@ a {
   top: 0;
   z-index: 10000;
   transition: transform 0.3s ease; }
-  .header .mainContainer {
+  .header .mainContainer .mobileLogoBox {
+    display: none; }
+    @media only screen and (max-width: 768px) {
+      .header .mainContainer .mobileLogoBox {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 0; } }
+    .header .mainContainer .mobileLogoBox .logoBox a {
+      display: block; }
+      .header .mainContainer .mobileLogoBox .logoBox a img {
+        height: 5rem;
+        width: auto;
+        display: block; }
+    .header .mainContainer .mobileLogoBox .hamburger svg {
+      height: 2rem;
+      width: auto;
+      display: block; }
+  .header .mainContainer .mainNav {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
     align-items: center;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem; }
-    .header .mainContainer .logoBox a {
+    @media only screen and (max-width: 768px) {
+      .header .mainContainer .mainNav {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #f1b347;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 1rem 3.2rem;
+        gap: 4rem;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out; } }
+    @media only screen and (max-width: 768px) {
+      .header .mainContainer .mainNav .logoBox {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center; } }
+    .header .mainContainer .mainNav .logoBox a {
       display: block; }
-      .header .mainContainer .logoBox a img {
+      @media only screen and (max-width: 768px) {
+        .header .mainContainer .mainNav .logoBox a {
+          transform: translateX(-12px); } }
+      .header .mainContainer .mainNav .logoBox a img {
         height: 6rem;
         width: auto;
         display: block; }
-    .header .mainContainer .nav {
+    .header .mainContainer .mainNav .logoBox .closeBtn {
+      display: none; }
+      @media only screen and (max-width: 768px) {
+        .header .mainContainer .mainNav .logoBox .closeBtn {
+          display: block; } }
+    .header .mainContainer .mainNav .nav {
       display: flex;
       align-items: center;
       gap: 5vw; }
-      .header .mainContainer .nav a {
+      @media only screen and (max-width: 768px) {
+        .header .mainContainer .mainNav .nav {
+          flex-direction: column;
+          gap: 4rem;
+          align-items: flex-start; } }
+      .header .mainContainer .mainNav .nav a {
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
@@ -422,9 +642,18 @@ a {
         text-align: left;
         color: #000;
         transition: all 0.3s ease; }
-        .header .mainContainer .nav a:hover {
+        @media only screen and (max-width: 768px) {
+          .header .mainContainer .mainNav .nav a {
+            font-size: 2rem; } }
+        .header .mainContainer .mainNav .nav a:hover {
           color: #f1b347; }
-    .header .mainContainer .donateBox a {
+          @media only screen and (max-width: 768px) {
+            .header .mainContainer .mainNav .nav a:hover {
+              color: #000; } }
+    @media only screen and (max-width: 768px) {
+      .header .mainContainer .mainNav .donateBox {
+        margin-top: 2rem; } }
+    .header .mainContainer .mainNav .donateBox a {
       font-weight: 500;
       font-stretch: normal;
       font-style: normal;
@@ -436,7 +665,11 @@ a {
       border-radius: 18px;
       background-color: #f1b347;
       transition: all 0.3s ease; }
-      .header .mainContainer .donateBox a:hover {
+      @media only screen and (max-width: 768px) {
+        .header .mainContainer .mainNav .donateBox a {
+          font-size: 2rem;
+          background-color: #000; } }
+      .header .mainContainer .mainNav .donateBox a:hover {
         opacity: 0.8; }
 
 .header.hide {
@@ -451,7 +684,7 @@ a {
     position: absolute;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 105%;
     width: 100%;
     object-fit: cover;
     z-index: -1; }
@@ -461,6 +694,12 @@ a {
     right: 7.5vw;
     height: 11rem;
     width: auto; }
+    @media only screen and (max-width: 1400px) {
+      .footer .footerLogo {
+        height: 9rem; } }
+    @media only screen and (max-width: 768px) {
+      .footer .footerLogo {
+        display: none; } }
   .footer .mainContainer {
     padding: 4rem 0 8rem 0; }
     .footer .mainContainer .desktop .top {
@@ -477,6 +716,9 @@ a {
         text-align: left;
         color: #fff;
         font-family: var(--spMono); }
+        @media only screen and (max-width: 768px) {
+          .footer .mainContainer .desktop .top h2 {
+            display: none; } }
       .footer .mainContainer .desktop .top p {
         font-weight: normal;
         font-stretch: normal;
@@ -486,11 +728,42 @@ a {
         text-align: left;
         color: #fff;
         max-width: 33.5%; }
+        @media only screen and (max-width: 768px) {
+          .footer .mainContainer .desktop .top p {
+            display: none; } }
+      .footer .mainContainer .desktop .top .topMobile {
+        display: none; }
+        @media only screen and (max-width: 768px) {
+          .footer .mainContainer .desktop .top .topMobile {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center; } }
+        .footer .mainContainer .desktop .top .topMobile .footerLogoMobile {
+          height: 6.5rem;
+          width: auto; }
+        .footer .mainContainer .desktop .top .topMobile .middle {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem; }
+          .footer .mainContainer .desktop .top .topMobile .middle a {
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: normal;
+            text-align: left;
+            color: #fff; }
     .footer .mainContainer .desktop .bottom {
       display: flex;
       justify-content: space-between;
       gap: 10vw;
       padding-top: 6rem; }
+      @media only screen and (max-width: 768px) {
+        .footer .mainContainer .desktop .bottom {
+          flex-direction: column;
+          gap: 4rem;
+          padding-top: 4rem; } }
       .footer .mainContainer .desktop .bottom .left {
         flex: 1; }
         .footer .mainContainer .desktop .bottom .left .contactForm .formGroup {
@@ -530,6 +803,9 @@ a {
           gap: 2rem;
           align-items: center;
           padding-top: 2rem; }
+          @media only screen and (max-width: 768px) {
+            .footer .mainContainer .desktop .bottom .left .socialContainer {
+              display: none; } }
           .footer .mainContainer .desktop .bottom .left .socialContainer a svg {
             height: 3.8rem;
             width: auto; }
@@ -537,6 +813,9 @@ a {
         display: flex;
         flex-direction: column;
         gap: 2rem; }
+        @media only screen and (max-width: 768px) {
+          .footer .mainContainer .desktop .bottom .middle {
+            display: none; } }
         .footer .mainContainer .desktop .bottom .middle a {
           font-weight: 500;
           font-stretch: normal;
@@ -550,6 +829,18 @@ a {
         display: flex;
         flex-direction: column;
         gap: 2rem; }
+        .footer .mainContainer .desktop .bottom .right .mobilePara {
+          display: none; }
+          @media only screen and (max-width: 768px) {
+            .footer .mainContainer .desktop .bottom .right .mobilePara {
+              display: block;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: left;
+              color: #fff; } }
         .footer .mainContainer .desktop .bottom .right a {
           display: flex;
           align-items: center;
@@ -565,6 +856,22 @@ a {
             height: 100%;
             width: 100%;
             display: block; }
+        .footer .mainContainer .desktop .bottom .right .socialContainer {
+          display: none;
+          gap: 2rem;
+          align-items: center;
+          padding-top: 2rem; }
+          @media only screen and (max-width: 768px) {
+            .footer .mainContainer .desktop .bottom .right .socialContainer {
+              display: flex;
+              width: 100%;
+              justify-content: space-around; } }
+          .footer .mainContainer .desktop .bottom .right .socialContainer a svg {
+            height: 3.8rem;
+            width: auto; }
+            @media only screen and (max-width: 768px) {
+              .footer .mainContainer .desktop .bottom .right .socialContainer a svg {
+                height: 3rem; } }
 
 .homeBanner .mainContainer {
   position: relative; }
