@@ -185,4 +185,39 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       });
     });
+
+  // Animate all .typewriter paragraphs HIGHLIGHT
+  document.querySelectorAll(".typewriter").forEach((el) => {
+    // Split words + chars
+    const split = new SplitType(el, { types: "words, chars" });
+
+    gsap.from(split.chars, {
+      opacity: 0,
+      y: 20,
+      duration: 0.05,
+      stagger: 0.03, // typing effect speed
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: el,
+        start: "top 85%",
+        toggleActions: "play none none none",
+      },
+      onStart: () => gsap.set(el, { opacity: 1 }),
+    });
+  });
+
+  // Animate all images with .zoom-in HIGHLIGHT
+  gsap.utils.toArray(".zoom-in").forEach((img) => {
+    gsap.from(img, {
+      scale: 0,
+      opacity: 0,
+      duration: 1.2,
+      ease: "back.out(1.7)", // bouncy grow effect
+      scrollTrigger: {
+        trigger: img,
+        start: "top 90%", // when image enters viewport
+        toggleActions: "play none none none",
+      },
+    });
+  });
 });
